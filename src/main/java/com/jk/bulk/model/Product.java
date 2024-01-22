@@ -10,7 +10,7 @@ package com.jk.bulk.model;
 
 public class Product {
 
-	private int productId;
+	private String productId;
 	private String title;
 	private String description;
 	private String price;
@@ -25,7 +25,7 @@ public class Product {
 	}
 
 
-	public Product(int productId, String title, String description, String price, String discount) {
+	public Product(String productId, String title, String description, String price, String discount) {
 		super();
 		this.productId = productId;
 		this.title = title;
@@ -35,12 +35,12 @@ public class Product {
 	}
 
 
-	public int getProductId() {
+	public String getProductId() {
 		return productId;
 	}
 
 
-	public void setProductId(int productId) {
+	public void setProductId(String productId) {
 		this.productId = productId;
 	}
 

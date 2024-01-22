@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BulkProcessDataApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BulkProcessDataApplication.class, args);
-	
-	
+
 		System.out.println("------------Project Started----------");
+		System.exit(SpringApplication.exit(SpringApplication.run(BulkProcessDataApplication.class, args)));
+
 	}
 
 }
