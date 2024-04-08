@@ -22,15 +22,12 @@ public class JobCompletionImpl implements JobExecutionListener {
 
 	@Override
 	public void beforeJob(JobExecution jobExecution) {
-		// TODO Auto-generated method stub
-
 		logger.info("Job Started...");
 
 	}
 
 	@Override
 	public void afterJob(JobExecution jobExecution) {
-		// TODO Auto-generated method stub
 
 		if (jobExecution.getStatus() == BatchStatus.COMPLETED) {
 			logger.info("Job Completed...");
